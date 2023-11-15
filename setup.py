@@ -12,8 +12,7 @@
  # See the License for the specific language governing permissions and
  # limitations under the License.
 
-from setuptools import setup
-from setuptools import find_packages
+from setuptools import find_packages, setup
 
 version = {}
 with open("./intuitlib/version.py") as fp:
@@ -31,7 +30,6 @@ setup(
     namespace_packages=('intuitlib',),
     install_requires=[
         'python_jose>=2.0.2',
-        'future>=0.16.0',
         'requests>=2.13.0',
         'requests_oauthlib>=1.0.0',
         'six>=1.10.0',
